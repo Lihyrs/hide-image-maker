@@ -1,0 +1,32 @@
+//root font size = 16px
+$preview_ht : 6.25rem;  //100px
+$preview_wd : 6.25rem;  //200px
+$ret_preview_wd: 31.25rem; //500px
+$ret_preview_ht: 12.5rem; //200px
+$const_num : 10000;
+
+@mixin hidden{
+    display: none;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flexRow {
+   @include flex;
+    flex-direction: row;
+}
+
+@mixin flexCenter {
+    @include flex;
+    align-items: center;
+    justify-items: center;
+
+}
+
+@mixin flexColumn {
+    @include flex;
+    flex-direction: column
+}
+
