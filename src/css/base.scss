@@ -1,0 +1,35 @@
+@import './_defines.scss';
+
+.hidden{
+    @include hidden
+}
+
+.preview{
+    height: $preview_ht;
+    width: $preview_wd;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,body{
+    margin: 0
+}
+
+input {
+    border-width: 0;
+}
+
+img {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#temporary{
+    @include hidden;
+    position: absolute;
+    z-index: -$const_num;
+    top: #{$const_num}px;
+    left: #{$const_num}px;
+}
