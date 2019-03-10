@@ -20,7 +20,7 @@ class tmpEleInstance {
     static _instance;
 
     constructor() {
-        let id;
+        let id = TMP_PATH;
 
         this.baseName = TMP_NAME;
         this._delHeap = new Set();
@@ -57,7 +57,7 @@ class tmpEleInstance {
         }
 
         id = ele.id;
-        node = document.getElementById('id');
+        node = document.getElementById(id);
         instance = tmpEleInstance.getInstance();
 
         if (this._delHeap.has(id)) {
