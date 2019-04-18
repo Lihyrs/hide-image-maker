@@ -15,7 +15,7 @@ class imageLoader {
             };
 
             img.onerror = (e) => {
-                console.log('http===>', e);
+                // console.log('http===>', e);
                 reject(new Error('image load error'));
             };
 
@@ -31,7 +31,7 @@ class imageLoader {
                 resolve(reader.result);
             };
             reader.onerror = (e) => {
-                console.log('local===>', e);
+                // console.log('local===>', e);
                 reject(new Error('image load error'));
             };
 
